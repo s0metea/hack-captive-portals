@@ -22,3 +22,11 @@ sudo ./hack-captive.sh
 ```
 
 > Tested in Ubuntu 16.04 with different Captive portals in airports and hotels all over the world.
+
+### Running with Docker
+Please, note that I haven't tried it yet.
+How to run:
+1) Build an image from a Dockerfile:
+`docker build -t captive-hack .`
+2) Run it with sudo:
+`sudo docker run -it --network host --cap-add NET_ADMIN captive-hack`
